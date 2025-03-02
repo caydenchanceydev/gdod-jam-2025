@@ -1,16 +1,37 @@
+//Created by: Cayden Chancey
+
 using UnityEngine;
 
 public class MainMenuLogic : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    #region Data Structures
+    #endregion
+    #region Variables
+    #endregion
+    #region Unity Methods
+    #endregion
+    #region Core Methods
+
+    public void StartGameClicked()
     {
-        
+    }
+    
+    public void OptionsClicked()
+    {
+    }
+    
+    public void CreditsClicked()
+    {
+    }
+    
+    public void ExitGameClicked()
+    {
+        Application.Quit();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    #endregion
+    #region Helpers
+    #endregion
+    #region Debug
+    #endregion
 }
