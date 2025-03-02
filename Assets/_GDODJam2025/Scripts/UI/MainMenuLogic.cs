@@ -14,6 +14,7 @@ public class MainMenuLogic : MonoBehaviour
 
     public void StartGameClicked()
     {
+        GDOD25_GameManager.Instance.StartGame();
     }
     
     public void OptionsClicked()

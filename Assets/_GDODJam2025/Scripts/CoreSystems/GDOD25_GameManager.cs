@@ -1,7 +1,13 @@
 //Created by: Cayden Chancey
 
 using System;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+using Tymski;
+
+using Sirenix.OdinInspector;
 
 public class GDOD25_GameManager : MonoBehaviour
 {
@@ -10,7 +16,7 @@ public class GDOD25_GameManager : MonoBehaviour
     [Serializable]
     public class GameManagerSettings
     {
-        
+        public SceneReference gameplayScene;
     }
 
     #endregion
@@ -18,17 +24,20 @@ public class GDOD25_GameManager : MonoBehaviour
     
     //----------------------SETTINGS---------------------
 
-    //[Title("Settings")]
+    [Title("Settings")]
 
     [SerializeField]
     private GameManagerSettings settings;
     
     //--------------------SINGLETON----------------------
 
-    //[ReadOnly]
-    public static GDOD25_GameManager Instance { get; private set; }
-
+    [Title("Singleton")]
+    
+    [SerializeField, ReadOnly]
     private bool dontDestroyOnLoad;
+    
+    [ReadOnly]
+    public static GDOD25_GameManager Instance { get; private set; }
     
     #endregion
     #region Unity Methods
@@ -52,7 +61,7 @@ public class GDOD25_GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        
+        SceneManager.LoadScene(settings.gameplayScene);
     }
 
     #endregion
