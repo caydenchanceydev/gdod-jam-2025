@@ -196,10 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a348949be03c3f46931568bc242d56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings:
-    gameplayScene:
-      sceneAsset: {fileID: 0}
-      scenePath: 
   dontDestroyOnLoad: 0
 --- !u!1 &801989436
 GameObject:
