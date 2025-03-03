@@ -263,7 +263,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3375272301176935862}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -297,7 +297,7 @@ MonoBehaviour:
   settings:
     orientation: {fileID: 293261905014432238}
     rb: {fileID: 7137510556401963450}
-    speed: 7
+    speed: 25
     groundDampening: 5
     playerHeight: 2
     groundCheckDistance: 0.2
