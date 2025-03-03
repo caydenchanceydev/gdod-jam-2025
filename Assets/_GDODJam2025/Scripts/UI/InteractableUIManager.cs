@@ -1,19 +1,20 @@
-//Created by: Cayden Chancey
-
 using System;
 
 using UnityEngine;
 
+using TMPro;
+
 using Sirenix.OdinInspector;
 
-public class GDOD25_GameManager : MonoBehaviour
+public class InteractableUIManager : MonoBehaviour
 {
     #region Data Structures
 
     [Serializable]
-    public class GameManagerSettings
+    public class InteractableUIManagerSettings
     {
-        
+        public GameObject interactTextObj;
+        public TextMeshProUGUI interactText;
     }
 
     #endregion
@@ -24,17 +25,17 @@ public class GDOD25_GameManager : MonoBehaviour
     [Title("Settings")]
 
     [SerializeField]
-    private GameManagerSettings settings;
+    private InteractableUIManagerSettings settings;
     
     //--------------------SINGLETON----------------------
 
     [Title("Singleton")]
     
-    [SerializeField]
+    [SerializeField, ReadOnly]
     private bool dontDestroyOnLoad;
     
     [ReadOnly]
-    public static GDOD25_GameManager Instance { get; private set; }
+    public static InteractableUIManager Instance { get; private set; }
     
     #endregion
     #region Unity Methods
@@ -55,6 +56,15 @@ public class GDOD25_GameManager : MonoBehaviour
     
     #endregion
     #region Core Methods
+
+    public void ShowText(string text, bool active)
+    {
+        if(active)
+            settings.interactText.text = text;
+        
+        settings.interactTextObj.SetActive(active);
+    }
+
     #endregion
     #region Helpers
     #endregion

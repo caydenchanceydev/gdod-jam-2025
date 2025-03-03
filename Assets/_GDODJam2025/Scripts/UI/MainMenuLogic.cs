@@ -1,12 +1,34 @@
 //Created by: Cayden Chancey
 
+using System;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+using Sirenix.OdinInspector;
+
+using Tymski;
 
 public class MainMenuLogic : MonoBehaviour
 {
     #region Data Structures
+
+    [Serializable]
+    public class GameManagerSettings
+    {
+        public SceneReference gameplayScene;
+    }
+
     #endregion
     #region Variables
+    
+    //----------------------SETTINGS---------------------
+
+    [Title("Settings")]
+
+    [SerializeField]
+    private GameManagerSettings settings;
+    
     #endregion
     #region Unity Methods
     #endregion
@@ -14,7 +36,7 @@ public class MainMenuLogic : MonoBehaviour
 
     public void StartGameClicked()
     {
-        GDOD25_GameManager.Instance.StartGame();
+        SceneManager.LoadScene(settings.gameplayScene);
     }
     
     public void OptionsClicked()

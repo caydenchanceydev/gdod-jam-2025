@@ -108,6 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc6cf326631af143976ef5147214118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings:
+    gameplayScene:
+      sceneAsset: {fileID: 102900000, guid: d737452467d14d044a3810fe1e38cb9c, type: 3}
+      scenePath: Assets/_GDODJam2025/Scenes/Gameplay.unity
 --- !u!1 &1616725053233913994
 GameObject:
   m_ObjectHideFlags: 0
