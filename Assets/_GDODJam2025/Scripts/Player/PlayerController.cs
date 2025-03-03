@@ -95,6 +95,8 @@ public class PlayerController : MonoBehaviour
         GroundedCheck();
         
         InputCollection();
+        
+        SpeedCheck();
     }
 
     void FixedUpdate()
@@ -122,6 +124,17 @@ public class PlayerController : MonoBehaviour
     {
         moveDirection = settings.orientation.forward * verticalInput + settings.orientation.right * horizontalInput;
         settings.rb.AddForce(moveDirection.normalized * (settings.speed * 10f), ForceMode.Force);
+    }
+
+    private void SpeedCheck()
+    {
+        Vector3 flatVelocity = new Vector3(settings.rb.linearVelocity.x, 0f, settings.rb.linearVelocity.z);
+
+        if (flatVelocity.magnitude > settings.speed)
+        {
+            Vector3 limitedVelocity = flatVelocity.normalized * settings.speed;
+            settings.rb.linearVelocity = new Vector3(limitedVelocity.x, settings.rb.linearVelocity.y, limitedVelocity.z);
+        }
     }
 
     #endregion
