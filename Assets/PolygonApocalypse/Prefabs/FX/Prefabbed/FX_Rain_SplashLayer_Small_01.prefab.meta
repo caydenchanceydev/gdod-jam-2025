@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 178fe69e3f7411140a8b9d4efaea9270
+timeCreated: 1563154856
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154193
+  packageName: POLYGON Apocalypse - Low Poly 3D Art by Synty
+  packageVersion: 1.18.2
+  assetPath: Assets/PolygonApocalypse/Prefabs/FX/Prefabbed/FX_Rain_SplashLayer_Small_01.prefab
+  uploadId: 735539

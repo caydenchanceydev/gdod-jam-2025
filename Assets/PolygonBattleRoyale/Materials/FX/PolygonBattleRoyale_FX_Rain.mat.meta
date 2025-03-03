@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c9a2b511240f72f49a704c23a7c07491
+timeCreated: 1496961316
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 128513
+  packageName: POLYGON Battle Royale - Low Poly 3D Art by Synty
+  packageVersion: 1.8.2
+  assetPath: Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_FX_Rain.mat
+  uploadId: 735870
