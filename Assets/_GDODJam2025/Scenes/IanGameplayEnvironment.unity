@@ -276,63 +276,6 @@ MonoBehaviour:
       sceneAsset: {fileID: 0}
       scenePath: 
   dontDestroyOnLoad: 0
---- !u!1 &293407656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 293407658}
-  - component: {fileID: 293407657}
-  m_Layer: 0
-  m_Name: BRUSH
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &293407657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293407656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 056b79144e1a33645b0660b9a05be552, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrawing: 0
-  enableSurfaceSnapping: 1
-  enableLookAt: 0
-  placementCooldown: 0.05
-  parentTransform: {fileID: 1641339680}
-  randomOffsetRange: {x: 0, y: 0, z: 0}
-  lookAtTarget: {fileID: 0}
-  specifiedScale: {x: 1, y: 1, z: 1}
-  modelsToPlace:
-  - {fileID: 110140, guid: afe2818fc38e1c44ea0e9758dd1992d2, type: 3}
-  - {fileID: 121492, guid: 2dc72da8b5d1d5e42b5be6a6f0c2c4d4, type: 3}
-  - {fileID: 161528, guid: 8f3253cb70543aa46b0b8912fa09f8a3, type: 3}
-  - {fileID: 135202, guid: 888a19a6a2e12e240b806f77f4d0ed07, type: 3}
---- !u!4 &293407658
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293407656}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504844118
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +865,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1131170188200374116, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1641339680}
     - target: {fileID: 3000895111563925727, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1079,5 +1026,4 @@ SceneRoots:
   - {fileID: 2059572788}
   - {fileID: 2063739622}
   - {fileID: 801989439}
-  - {fileID: 293407658}
   - {fileID: 1641339680}
