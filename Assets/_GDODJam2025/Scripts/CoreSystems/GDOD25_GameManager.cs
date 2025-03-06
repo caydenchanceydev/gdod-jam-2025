@@ -3,9 +3,6 @@
 using System;
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-using Tymski;
 
 using Sirenix.OdinInspector;
 
@@ -16,7 +13,7 @@ public class GDOD25_GameManager : MonoBehaviour
     [Serializable]
     public class GameManagerSettings
     {
-        public SceneReference gameplayScene;
+        
     }
 
     #endregion
@@ -33,7 +30,7 @@ public class GDOD25_GameManager : MonoBehaviour
 
     [Title("Singleton")]
     
-    [SerializeField, ReadOnly]
+    [SerializeField]
     private bool dontDestroyOnLoad;
     
     [ReadOnly]
@@ -58,12 +55,6 @@ public class GDOD25_GameManager : MonoBehaviour
     
     #endregion
     #region Core Methods
-
-    public void StartGame()
-    {
-        SceneManager.LoadScene(settings.gameplayScene);
-    }
-
     #endregion
     #region Helpers
     #endregion

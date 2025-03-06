@@ -60,4 +60,24 @@ public class UIToolMenu
         rect.anchorMax = Vector2.one;
         rect.sizeDelta = Vector2.zero;
     }
+    
+    [MenuItem("CONTEXT/Transform/Randomize Y Rotation")]
+    static void RandomizeYRotation()
+    {
+        foreach (GameObject o in Selection.gameObjects)
+        {
+            if (o == null)
+            {
+                return;
+            }
+
+            Transform tForm = o.GetComponent<Transform>();
+            
+            Undo.RecordObject(tForm, "RotateYRand");
+
+            tForm.rotation = Quaternion.Euler(tForm.rotation.eulerAngles.x, Random.Range(0f, 360f), tForm.rotation.eulerAngles.z);
+            
+            EditorUtility.SetDirty(tForm);
+        }
+    }
 }
