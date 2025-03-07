@@ -1445,6 +1445,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52bc5337cacc3f344925aa7b09866a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1730355221 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4143799932353995321, guid: 127ad6bb46875d44ab07468ef844b625, type: 3}
+  m_PrefabInstance: {fileID: 654480008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1775193346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,6 +2099,22 @@ PrefabInstance:
       propertyPath: 'settings.vfx.Array.data[2]'
       value: 
       objectReference: {fileID: 952543516}
+    - target: {fileID: 1155167097839485061, guid: 288fe88d66df7014b80d2de69dcdec51, type: 3}
+      propertyPath: OnVFXActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1730355221}
+    - target: {fileID: 1155167097839485061, guid: 288fe88d66df7014b80d2de69dcdec51, type: 3}
+      propertyPath: OnVFXDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1730355221}
+    - target: {fileID: 1155167097839485061, guid: 288fe88d66df7014b80d2de69dcdec51, type: 3}
+      propertyPath: OnVFXActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155167097839485061, guid: 288fe88d66df7014b80d2de69dcdec51, type: 3}
+      propertyPath: OnVFXDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
     - target: {fileID: 4570848888456102768, guid: 288fe88d66df7014b80d2de69dcdec51, type: 3}
       propertyPath: m_Name
       value: GDOD_Player
