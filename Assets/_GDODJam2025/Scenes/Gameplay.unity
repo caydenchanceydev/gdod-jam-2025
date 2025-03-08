@@ -220,7 +220,7 @@ MonoBehaviour:
     endScreenCanvasGroup: {fileID: 976023373}
     timeToFadeInEndScreen: 1
     winScreen: {fileID: 352257753}
-    winDelay: 1
+    winDelay: 0.5
     winDelayToRestart: 5
     lossScreen: {fileID: 338808310}
     lossText: {fileID: 1807949598}
@@ -228,7 +228,7 @@ MonoBehaviour:
     lossTextScaleTime: 2
     timeAtMaxBladderToLose: 0
     timeAtMaxDrinkToLose: 0
-    lossDelay: 1
+    lossDelay: 0.5
     lossDelayToRestart: 5
   gameInProgress: 0
   interactionCounterValue: 0
