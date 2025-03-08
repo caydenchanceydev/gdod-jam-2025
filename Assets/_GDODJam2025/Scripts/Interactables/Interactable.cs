@@ -93,6 +93,9 @@ public class Interactable : MonoBehaviour, IInteractable
 
     public void ShowText(string keycode, bool show)
     {
+        if (settings.oneTimeUse && hasBeenActivated)
+            return;
+        
         string textToShow = $"{settings.interactableText}\n[{keycode}] ";
         InteractableUIManager.Instance.ShowText(textToShow, CheckRequirements(), show);
     }
