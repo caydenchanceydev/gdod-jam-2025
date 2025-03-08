@@ -50,6 +50,30 @@ public class BarManager : MonoBehaviour
     public float drinkToBladder;
     public float drinkToAnxiety;
     public float bladderToAnxiety;
+    
+    //--------------------SINGLETON----------------------
+
+    [Title("Singleton")]
+    
+    [SerializeField]
+    private bool dontDestroyOnLoad;
+    
+    [ReadOnly]
+    public static BarManager Instance { get; private set; }
+    
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
+        if (dontDestroyOnLoad)
+            DontDestroyOnLoad(gameObject);
+    }
 
     private void Start()
     {

@@ -12,6 +12,8 @@ public class HoldKeyToActivateVFX : MonoBehaviour
     [Serializable]
     public class HoldKeyToActivateVFXSettings
     {
+        public float bladderDrainWhileOn;
+        
         public List<ParticleSystem> vfx;
         public KeyCode interactKey;
         public float timeToDetermineHold;
@@ -58,6 +60,9 @@ public class HoldKeyToActivateVFX : MonoBehaviour
     {
         if (Input.GetKeyDown(settings.interactKey))
         {
+            if (BarManager.Instance.bladder < 0f)
+                return;
+            
             keyPressStart = Time.time;
         }
         else 
@@ -66,9 +71,18 @@ public class HoldKeyToActivateVFX : MonoBehaviour
             if (Time.time - keyPressStart <= settings.timeToDetermineHold)
                 return;
 
-            if (isVFXActive)
+            if (BarManager.Instance.bladder <= 0f)
+            {
+                SetVFXActive(false);
                 return;
-            
+            }
+
+            if (isVFXActive)
+            {
+                BarManager.Instance.ModifyBladder(-settings.bladderDrainWhileOn);
+                return;
+            }
+
             SetVFXActive(true);
         }
         else 
