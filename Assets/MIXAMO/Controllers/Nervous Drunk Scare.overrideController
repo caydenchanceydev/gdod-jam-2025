@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Nervous Drunk Scare
+  m_Controller: {fileID: 9100000, guid: a273ad2c67f4b834296accdaa1c1ded2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0252394058591b44a94622f5be0703d4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cf25533da3f8e8e458beeac4b95d15a4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b05724598e6ce4441940e2e6733686a2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ebc734ef1b712b344b7009cd3397e0b8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a1ea62d2a086412419d106092a328257, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5b72d39089a38a44b9d3be7256bc34ed, type: 2}
