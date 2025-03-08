@@ -3134,7 +3134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 179756641907059960, guid: 787babd9322d7b44eb0824ba579a1237, type: 3}
       propertyPath: drinkToAnxiety
-      value: -0.001875
+      value: -0.00375
       objectReference: {fileID: 0}
     - target: {fileID: 2133337744494390065, guid: 787babd9322d7b44eb0824ba579a1237, type: 3}
       propertyPath: m_AnchorMax.x
