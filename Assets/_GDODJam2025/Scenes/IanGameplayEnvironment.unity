@@ -1165,6 +1165,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: IanGeo
       objectReference: {fileID: 0}
+    - target: {fileID: 4980468485084562844, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
+      propertyPath: m_Volume
+      value: 0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980468485084562844, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 29324d6e4658f154fb22ea3514c9147e, type: 3}
+    - target: {fileID: 4980468485084562844, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 29324d6e4658f154fb22ea3514c9147e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
