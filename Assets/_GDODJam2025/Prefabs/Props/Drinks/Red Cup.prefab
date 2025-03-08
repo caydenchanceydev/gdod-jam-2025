@@ -47,7 +47,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-    interactableText: 
+    interactableText: Drink Beer
+    isPersonInteraction: 0
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects:
+    - effect: 0
+      requirement: 0.25
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!136 &2709678033508640633
 CapsuleCollider:
   m_ObjectHideFlags: 0
