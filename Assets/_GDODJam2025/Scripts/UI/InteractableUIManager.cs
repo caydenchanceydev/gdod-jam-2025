@@ -15,6 +15,9 @@ public class InteractableUIManager : MonoBehaviour
     {
         public GameObject interactTextObj;
         public TextMeshProUGUI interactText;
+
+        public Color regularColor;
+        public Color nonInteractColor;
     }
 
     #endregion
@@ -57,10 +60,12 @@ public class InteractableUIManager : MonoBehaviour
     #endregion
     #region Core Methods
 
-    public void ShowText(string text, bool active)
+    public void ShowText(string text, bool interactable, bool active)
     {
         if(active)
             settings.interactText.text = text;
+        
+        settings.interactText.color = interactable ? settings.regularColor : settings.nonInteractColor;
         
         settings.interactTextObj.SetActive(active);
     }
