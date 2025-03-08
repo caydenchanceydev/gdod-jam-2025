@@ -1161,6 +1161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3303980238199904634, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
+      propertyPath: settings.interactableText
+      value: Talk to Carl
+      objectReference: {fileID: 0}
     - target: {fileID: 4045861330001231896, guid: 727536c03005fc444af778b2f4728d9a, type: 3}
       propertyPath: m_Name
       value: IanGeo
