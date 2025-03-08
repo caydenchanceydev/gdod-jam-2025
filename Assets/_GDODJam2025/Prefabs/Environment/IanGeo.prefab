@@ -960,6 +960,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with people who are definitely not making fun of you...
+    isPersonInteraction: 1
+    numPeople: 2
+    oneTimeUse: 0
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.25
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &1054637769474656515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +1950,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Join the Polyamorists
+    isPersonInteraction: 1
+    numPeople: 3
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.25
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &2249001058173126541
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,6 +2157,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Talk to Gen Xers
+    isPersonInteraction: 1
+    numPeople: 3
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.5
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &2442662944888601519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2637,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Join in on the friendly conversation
+    isPersonInteraction: 1
+    numPeople: 4
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &3313979554397500293
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,7 +4082,7 @@ GameObject:
   - component: {fileID: 7626476816279596093}
   - component: {fileID: 951713441309168681}
   - component: {fileID: 4700204909804785256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4058,7 +4098,7 @@ Transform:
   m_GameObject: {fileID: 4847987152187828450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005, y: 0.229, z: 0.006}
+  m_LocalPosition: {x: 0.005, y: 0.193, z: 0.006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4112,7 +4152,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 503
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -4672,6 +4712,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Talk to The Mean Girls
+    isPersonInteraction: 1
+    numPeople: 5
+    oneTimeUse: 0
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.25
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &5631728573128513638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5188,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Complete the ritual... Or just have a chat!
+    isPersonInteraction: 1
+    numPeople: 8
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.0625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &6337692041928989431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5206,6 +5266,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Talk to Millenials
+    isPersonInteraction: 1
+    numPeople: 2
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &6412055777346457647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7046,6 +7116,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Hang with the homies
+    isPersonInteraction: 1
+    numPeople: 2
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.25
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &8463029634211702722
 GameObject:
   m_ObjectHideFlags: 0
@@ -7114,6 +7194,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Talk to Gen Zs
+    isPersonInteraction: 1
+    numPeople: 3
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.5625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &8656839524105094836
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,6 +7424,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: To hanashite kudasai weebs
+    isPersonInteraction: 1
+    numPeople: 2
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.5
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1 &9212874092678336400
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,6 +7502,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with the Magic The Gathering players
+    isPersonInteraction: 1
+    numPeople: 2
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.5625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &25104377269240425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10556,6 +10666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Item_Lantern_02
       objectReference: {fileID: 0}
+    - target: {fileID: 139430, guid: 4584be541115cdc4bbf6147fe22347b2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 422130, guid: 4584be541115cdc4bbf6147fe22347b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.2874827
@@ -11715,6 +11829,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with Stephen
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &664620185264463659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12947,6 +13069,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Have a chinwag with Boomer
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 0
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.375
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &810230370410082744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4243283937563730, guid: 40e0a4ef3d023e642a510a3b44e8202e, type: 3}
@@ -13571,6 +13703,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with Officer Funkeil
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &835985826160737786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4623218878400348, guid: d9f6a33196dbe594b893efa7ad5f43a6, type: 3}
@@ -14940,6 +15082,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Interrupt Jorge
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &982004646565352552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17504,6 +17656,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Console Nick
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &1317477721882266009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20849,6 +21011,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Talk to Alto to see whats going on here...
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &1786895896805198065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 472912, guid: 471247d5cf89b2c46bcde0f08524197e, type: 3}
@@ -23206,6 +23378,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with Elton
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &2123588590463379176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4179945073926268, guid: 0c4f2b2dbeb9b1f40ae35319fd9995e6, type: 3}
@@ -28205,6 +28385,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Converse with Chad Proudmen about the first week of January...
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &3010950430506830346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30134,6 +30324,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: See how Robin is feeling
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &3323191586814909682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4398874139125376, guid: a707d88dcbb19844d9bad90838e17917, type: 3}
@@ -30794,6 +30994,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Geek out with Albert
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!136 &3446819254879946110
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36243,6 +36451,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Dance with Steal
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &4020013011644804156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4379659365344250, guid: 807784d16a875e0499c116c9506424aa, type: 3}
@@ -39069,6 +39287,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: BONESAW IS READY to shoot the breeze with you
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.375
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &4366307067015128736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4432474598567780, guid: af169be12f376ce46a3e6b4bee8b8ffe, type: 3}
@@ -42342,6 +42570,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: ??? with Georgie
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &4808752317919864384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44162,6 +44400,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with Tracy
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &5039413286556087582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47538,6 +47784,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Rizz up Shawty
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.25
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &5516625249768327176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4265890523396608, guid: 2cf3791ad43b2b24f9a9b4e2c7687c9c, type: 3}
@@ -50857,6 +51113,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Ask how Giorgio is doing
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &5918800310057584650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53031,6 +53297,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Laugh with Burgle
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &6142887120040190141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4183049840701662, guid: 115e889341316e74b9a33d9cbcdd61b2, type: 3}
@@ -54685,6 +54961,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Sing with Soprano
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &6365039124991904901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59033,6 +59319,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Yackety-yak with Baba
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.0625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &6958676300306035375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4744796364203432, guid: dc6170fded71bf944b115160ab2cae64, type: 3}
@@ -60760,6 +61056,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Jam out with Fleece
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &7191269602750766832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4267430597299062, guid: e8e6a8d0d7d9a1245a0d143f23cc283b, type: 3}
@@ -63741,6 +64047,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Dance with Swindle
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &7538861715862462181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4379659365344250, guid: 807784d16a875e0499c116c9506424aa, type: 3}
@@ -64913,6 +65229,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Rock out with Rob
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.125
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &7634855017756419968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4507433646410060, guid: b87cb604b959698428935c5d56bd97c0, type: 3}
@@ -67403,6 +67729,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Listen to Jebb's joke. Please laugh.
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &7985225204931119168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4510079717560118, guid: b6dd7aa0471525a4ba150a6dd06fc4b4, type: 3}
@@ -71224,6 +71560,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chat with Freddie
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &8573142194344758763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4049357556114238, guid: 3c3a8236be548bb4c892cf39a5abadfe, type: 3}
@@ -72727,6 +73071,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Chit chat with George
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.1875
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!1001 &8787331041858402026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73461,6 +73815,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Nerd out with Neil
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects: []
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!136 &7936880574651920861
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -76289,6 +76651,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     interactableText: Confab with Yaga
+    isPersonInteraction: 1
+    numPeople: 1
+    oneTimeUse: 1
+    turnOffAfterUse: 0
+    requiredEffects:
+    - effect: 1
+      requirement: 0.0625
+    givenEffects: []
+    audioToPlay: {fileID: 0}
+  hasBeenActivated: 0
 --- !u!4 &9147203083792913879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4569614443650498, guid: 2154df2b1029fce44a5ed87edcaa0546, type: 3}
