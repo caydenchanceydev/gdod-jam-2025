@@ -220,9 +220,6 @@ MonoBehaviour:
     endScreenCanvasGroup: {fileID: 976023373}
     timeToFadeInEndScreen: 1
     winScreen: {fileID: 352257753}
-    winTextTransform1: {fileID: 0}
-    winTextTransform2: {fileID: 0}
-    win_delayBetweenScreenFadeAndTextScale: 0
     winDelay: 1
     winDelayToRestart: 5
     lossScreen: {fileID: 338808310}
@@ -1440,7 +1437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1210473865
 Transform:
   m_ObjectHideFlags: 0
@@ -1685,7 +1682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1390519986
 Transform:
   m_ObjectHideFlags: 0
@@ -3137,7 +3134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 179756641907059960, guid: 787babd9322d7b44eb0824ba579a1237, type: 3}
       propertyPath: anxietyStart
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2133337744494390065, guid: 787babd9322d7b44eb0824ba579a1237, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3474,6 +3471,10 @@ PrefabInstance:
     - target: {fileID: 3216368163653607586, guid: edaa9bc410de24540bcbbe59d864f305, type: 3}
       propertyPath: m_Name
       value: Flashlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216368163653607586, guid: edaa9bc410de24540bcbbe59d864f305, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
