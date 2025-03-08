@@ -81,10 +81,12 @@ public class Interactable : MonoBehaviour, IInteractable
         }
 
         ApplyEffects();
+        
+        if(settings.oneTimeUse)
+            hasBeenActivated = true;
 
         if (settings.oneTimeUse && settings.turnOffAfterUse)
         {
-            hasBeenActivated = true;
             gameObject.SetActive(false);
         }
     }
