@@ -17,6 +17,8 @@ public class GDOD25_GameManager : MonoBehaviour
     [Serializable]
     public class GameManagerSettings
     {
+        public GameObject hud;
+        
         public string mainMenuSceneName;
         
         public int totalInteractionsNeeded;
@@ -26,9 +28,6 @@ public class GDOD25_GameManager : MonoBehaviour
         public float timeToFadeInEndScreen;
 
         public GameObject winScreen;
-        public RectTransform winTextTransform1;
-        public RectTransform winTextTransform2;
-        public float win_delayBetweenScreenFadeAndTextScale;
         public float winDelay;
         public float winDelayToRestart;
 
@@ -40,6 +39,7 @@ public class GDOD25_GameManager : MonoBehaviour
         
         public float lossTextScaleTime;
         public float timeAtMaxBladderToLose;
+        public float timeAtMaxDrinkToLose;
         public float lossDelay;
         public float lossDelayToRestart;
     }
@@ -66,6 +66,9 @@ public class GDOD25_GameManager : MonoBehaviour
     
     [SerializeField, ReadOnly]
     public float bladderMaxStartTime;
+    
+    [SerializeField, ReadOnly]
+    public float drinkMaxStartTime;
     
     //--------------------SINGLETON----------------------
 
@@ -118,6 +121,8 @@ public class GDOD25_GameManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(settings.winDelay);
         
+        settings.hud.gameObject.SetActive(false);
+        
         settings.winScreen.SetActive(true);
         
         settings.endScreenCanvasGroup.DOFade(1f, settings.timeToFadeInEndScreen);
@@ -127,9 +132,16 @@ public class GDOD25_GameManager : MonoBehaviour
         RestartGame();
     }
 
-    private IEnumerator LoseGame()
+    private IEnumerator LoseGame(bool fromDrink)
     {
         yield return new WaitForSecondsRealtime(settings.lossDelay);
+        
+        settings.hud.gameObject.SetActive(false);
+
+        if (fromDrink)
+            settings.lossText.text = "YOU BLACKED OUT";
+        else
+            settings.lossText.text = "YOU PISSED YOURSELF";
         
         settings.lossScreen.SetActive(true);
         settings.endScreenCanvasGroup.DOFade(1f, settings.timeToFadeInEndScreen);
@@ -172,12 +184,27 @@ public class GDOD25_GameManager : MonoBehaviour
             if (Time.time - bladderMaxStartTime >= settings.timeAtMaxBladderToLose)
             {
                 gameInProgress = false;
-                StartCoroutine(LoseGame());
+                StartCoroutine(LoseGame(false));
             }
         }
         else
         {
             bladderMaxStartTime = 0f;
+        }
+        
+        if (BarManager.Instance.drink >= 1f)
+        {
+            drinkMaxStartTime = Time.time;
+
+            if (Time.time - drinkMaxStartTime >= settings.timeAtMaxDrinkToLose)
+            {
+                gameInProgress = false;
+                StartCoroutine(LoseGame(true));
+            }
+        }
+        else
+        {
+            drinkMaxStartTime = 0f;
         }
     }
 
@@ -185,10 +212,10 @@ public class GDOD25_GameManager : MonoBehaviour
     #region Debug
 
     [Button("Lose Game")]
-    private void Debug_LoseGame()
+    private void Debug_LoseGame(bool fromDrink)
     {
         gameInProgress = false;
-        StartCoroutine(LoseGame());
+        StartCoroutine(LoseGame(fromDrink));
     }
     
     [Button("Win Game")]
