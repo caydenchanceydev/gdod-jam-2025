@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
+    hud: {fileID: 7090683287309821667}
     mainMenuSceneName: MainMenu
     totalInteractionsNeeded: 20
     counterText: {fileID: 7090683287309821666}
@@ -229,11 +230,13 @@ MonoBehaviour:
     loss_delayBetweenScreenFadeAndTextScale: 0.2
     lossTextScaleTime: 2
     timeAtMaxBladderToLose: 5
+    timeAtMaxDrinkToLose: 0
     lossDelay: 1
     lossDelayToRestart: 5
   gameInProgress: 0
   interactionCounterValue: 0
   bladderMaxStartTime: 0
+  drinkMaxStartTime: 0
   dontDestroyOnLoad: 0
 --- !u!1001 &243959046
 PrefabInstance:
@@ -1249,7 +1252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 0.8509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2097,7 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+  m_Color: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 0.8509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3284,6 +3287,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7090683287309821667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4025497695749169035, guid: 787babd9322d7b44eb0824ba579a1237, type: 3}
+  m_PrefabInstance: {fileID: 7090683287309821665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!222 &7822422071157633919
 CanvasRenderer:
   m_ObjectHideFlags: 0
